@@ -1,0 +1,60 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'C:\\Program Files\\nodejs\\\\node.exe',
+1 verbose cli   'C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'adduser' ]
+2 info using npm@1.4.28
+3 info using node@v0.10.33
+4 verbose node symlink C:\Program Files\nodejs\\node.exe
+5 warn Username must be lowercase
+6 verbose adduser before first PUT { name: 'kenny',
+6 verbose adduser   password: 'XXXXX',
+6 verbose adduser   email: 'Kenny.Huang@adp.com',
+6 verbose adduser   _id: 'org.couchdb.user:kenny',
+6 verbose adduser   type: 'user',
+6 verbose adduser   roles: [],
+6 verbose adduser   date: '2015-07-02T02:03:34.742Z' }
+7 verbose request where is /-/user/org.couchdb.user:kenny
+8 verbose request registry https://registry.npmjs.org/
+9 verbose request id 9e628580f61a1bf7
+10 verbose url raw /-/user/org.couchdb.user:kenny
+11 verbose url resolving [ 'https://registry.npmjs.org/',
+11 verbose url resolving   './-/user/org.couchdb.user:kenny' ]
+12 verbose url resolved https://registry.npmjs.org/-/user/org.couchdb.user:kenny
+13 verbose request where is https://registry.npmjs.org/-/user/org.couchdb.user:kenny
+14 info trying registry request attempt 1 at 22:03:34
+15 http PUT https://registry.npmjs.org/-/user/org.couchdb.user:kenny
+16 http 400 https://registry.npmjs.org/-/user/org.couchdb.user:kenny
+17 verbose headers { 'content-type': 'application/json',
+17 verbose headers   'cache-control': 'max-age=60',
+17 verbose headers   'content-length': '57',
+17 verbose headers   'accept-ranges': 'bytes',
+17 verbose headers   date: 'Thu, 02 Jul 2015 02:03:31 GMT',
+17 verbose headers   via: '1.1 varnish',
+17 verbose headers   connection: 'keep-alive',
+17 verbose headers   'x-served-by': 'cache-iad2132-IAD',
+17 verbose headers   'x-cache': 'MISS',
+17 verbose headers   'x-cache-hits': '0',
+17 verbose headers   'x-timer': 'S1435802611.293431,VS0,VE428' }
+18 verbose adduser back [ [Error: Unknown error while authenticating : -/user/org.couchdb.user:kenny],
+18 verbose adduser   { ok: false, error: 'Unknown error while authenticating' },
+18 verbose adduser   '{"ok":false,"error":"Unknown error while authenticating"}' ]
+19 error Error: Unknown error while authenticating : -/user/org.couchdb.user:kenny
+19 error     at RegClient.<anonymous> (C:\Program Files\nodejs\node_modules\npm\node_modules\npm-registry-client\lib\request.js:308:14)
+19 error     at Request._callback (C:\Program Files\nodejs\node_modules\npm\node_modules\npm-registry-client\lib\request.js:246:65)
+19 error     at Request.self.callback (C:\Program Files\nodejs\node_modules\npm\node_modules\request\request.js:236:22)
+19 error     at Request.emit (events.js:98:17)
+19 error     at Request.<anonymous> (C:\Program Files\nodejs\node_modules\npm\node_modules\request\request.js:1142:14)
+19 error     at Request.emit (events.js:117:20)
+19 error     at IncomingMessage.<anonymous> (C:\Program Files\nodejs\node_modules\npm\node_modules\request\request.js:1096:12)
+19 error     at IncomingMessage.emit (events.js:117:20)
+19 error     at _stream_readable.js:943:16
+19 error     at process._tickCallback (node.js:419:13)
+20 error If you need help, you may report this *entire* log,
+20 error including the npm and node versions, at:
+20 error     <http://github.com/npm/npm/issues>
+21 error System Windows_NT 6.1.7601
+22 error command "C:\\Program Files\\nodejs\\\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "adduser"
+23 error cwd C:\Users\Tai Neng Huang\Desktop\pathFinder
+24 error node -v v0.10.33
+25 error npm -v 1.4.28
+26 verbose exit [ 1, true ]
